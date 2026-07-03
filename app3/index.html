@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 3 - Maps | Meses</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4a2c2a, #6d3b2f, #8b4513);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2.5rem;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 { color: #6d3b2f; text-align: center; margin-bottom: 0.3rem; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .btn-group { display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; margin-bottom: 1.5rem; }
+        .btn {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary { background: #6d3b2f; color: #fff; }
+        .btn-primary:hover { background: #8b4513; transform: translateY(-2px); }
+        .btn-success { background: #27ae60; color: #fff; }
+        .btn-success:hover { background: #2ecc71; transform: translateY(-2px); }
+        .btn-info { background: #2980b9; color: #fff; }
+        .btn-info:hover { background: #3498db; transform: translateY(-2px); }
+        .btn-warning { background: #e67e22; color: #fff; }
+        .btn-warning:hover { background: #d35400; transform: translateY(-2px); }
+        .output-box {
+            background: #1e1e2e;
+            color: #e6a17a;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            min-height: 100px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .back-link { display: block; text-align: center; margin-top: 1.2rem; color: #6d3b2f; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📅 App 3 · Maps</h1>
+        <p class="subtitle">Meses del año — clave ⇾ valor</p>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="comprobarMes5()">🔍 Comprobar mes 5</button>
+            <button class="btn btn-success" onclick="anadirVerano()">☀️ Añadir verano</button>
+            <button class="btn btn-info" onclick="imprimirMapa()">📋 Imprimir Mapa</button>
+        </div>
+
+        <div class="output-box" id="output">
+Mapa de meses:
+1 → Enero
+2 → Febrero
+3 → Marzo
+4 → Abril
+5 → Mayo
+6 → Junio
+7 → Julio
+8 → Agosto
+9 → Septiembre
+10 → Octubre
+11 → Noviembre
+12 → Diciembre
+        </div>
+
+        <a href="../index.html" class="back-link">← Volver al inicio</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

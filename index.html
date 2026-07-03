@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras en JavaScript - ADSO 35</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #0f3460;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 1rem;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+        .app-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .app-card:hover {
+            border-color: #0f3460;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(15, 52, 96, 0.15);
+        }
+        .app-card h2 {
+            font-size: 1.3rem;
+            color: #0f3460;
+            margin-bottom: 0.5rem;
+        }
+        .app-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Estructuras en JavaScript</h1>
+        <p class="subtitle">Arrays, Sets y Maps — ADSO 35</p>
+
+        <div class="app-grid">
+            <a href="app1/index.html" class="app-card">
+                <div class="icon">🐾</div>
+                <h2>App 1 · Arrays</h2>
+                <p>Gestión de animales: añadir al inicio/final, eliminar 3.º, imprimir</p>
+            </a>
+            <a href="app2/index.html" class="app-card">
+                <div class="icon">📚</div>
+                <h2>App 2 · Sets</h2>
+                <p>Colección de libros: añadir, eliminar, imprimir conjunto</p>
+            </a>
+            <a href="app3/index.html" class="app-card">
+                <div class="icon">📅</div>
+                <h2>App 3 · Maps</h2>
+                <p>Meses del año: comprobar, añadir verano, imprimir mapa</p>
+            </a>
+            <a href="app4/index.html" class="app-card">
+                <div class="icon">🔄</div>
+                <h2>App 4 · Transformación</h2>
+                <p>Array → Set → Map: conversión entre estructuras</p>
+            </a>
+        </div>
+
+        <div class="footer">
+            Darío Fernando Gómez Z. · Instructor CEAI · SENA
+        </div>
+    </div>
+</body>
+</html>
