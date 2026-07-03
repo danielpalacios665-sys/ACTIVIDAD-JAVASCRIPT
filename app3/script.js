@@ -18,9 +18,9 @@ function formatearMapa() {
     let texto = "Mapa de meses:\n";
     for (const [clave, valor] of meses) {
         if (Array.isArray(valor)) {
-            texto += clave + " → [ " + valor.join(", ") + " ]\n";
+            texto += clave + " - [ " + valor.join(", ") + " ]\n";
         } else {
-            texto += clave + " → " + valor + "\n";
+            texto += clave + " - " + valor + "\n";
         }
     }
     return texto;
